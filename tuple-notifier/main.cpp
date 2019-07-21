@@ -18,7 +18,7 @@ void startCB(CFNotificationCenterRef center, void* observer, CFStringRef notific
 }
 
 void endCB(CFNotificationCenterRef center, void* observer, CFStringRef notificationName, const void* observedObject, CFDictionaryRef userInfo ) {
-    std::cout << "Tuple call ended. Executing: " << startSystemCall << std::endl;
+    std::cout << "Tuple call ended. Executing: " << endSystemCall << std::endl;
     system(endSystemCall.c_str());
 }
 
